@@ -5,49 +5,50 @@
 #include <unordered_map>
 #include <utility>
 
-
-
-/**
- * Representa una arista con peso
- */
+// Estructura que representa una arista con peso
 struct Edge {
-    int to;           // Nodo destino
-    int weight;       // Peso de la arista
+    int to;
+    int weight;
 };
 
-
-
-/**
- * Representa un grafo no dirigido ponderado
- * Usa lista de adyacencia como estructura de datos interna
- */
+// Clase principal para representar el grafo
 class Graph {
 private:
-    std::vector<std::vector<Edge>> adj_list;    // Lista de adyacencia
-    std::unordered_map<int, int> node_mapping;  // ID original -> índice interno
-    std::vector<int> reverse_mapping;           // Índice interno -> ID original
+    std::vector<std::vector<Edge>> adj_list;        // Lista de adyacencia ponderada
+    std::unordered_map<int, int> node_mapping;      // Mapeo: ID original -> índice interno
+    std::vector<int> reverse_mapping;               // Mapeo inverso: índice interno -> ID original
     int num_nodes;
     int num_edges;
 
 public:
-    // Constructor
     Graph();
-
+    
+    // Agregar una arista al grafo (no dirigida)
     void add_edge(int u, int v, int weight);
-
-   
+    
+    // Obtener lista de adyacencia
     const std::vector<std::vector<Edge>>& get_adjacency_list() const;
-
-  
+    
+    // Obtener el índice interno de un nodo
     int get_internal_id(int original_id) const;
-
-   
+    
+    // Obtener el ID original de un nodo
     int get_original_id(int internal_id) const;
-
-    // Getters
+    
+    // Obtener número de nodos
     int get_num_nodes() const;
+    
+    // Obtener número de aristas
     int get_num_edges() const;
+    
+    // Verificar si un nodo existe (por ID original)
+    bool node_exists(int node_id) const;
+    
+    // Obtener el grado de un nodo (por índice interno)
+    int get_degree(int internal_id) const;
+    
+    // Mapear un nodo original a índice interno
+    void map_node(int original_id, int internal_id);
 };
 
-#endif // GRAPH_HPP
-
+#endif

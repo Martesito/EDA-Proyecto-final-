@@ -1,0 +1,16 @@
+=== ANALISIS DEL SUBGRAFO INDUCIDO ===
+
+Numero de nodos: 210
+Numero de aristas: 213
+
+=== ARBOL DE EXPANSION MINIMA (MST) ===
+Numero de aristas en MST: 209
+Peso total del MST: 1013
+
+=== ANALISIS DAG ===
+Es DAG (grafo aciclico dirigido): NO
+
+Notas:
+- El subgrafo inducido contiene los nodos que aparecen en los caminos Q01 y Q06.
+- El MST fue calculado usando el algoritmo de Kruskal.
+- La verificacion de DAG se realizo con DFS.

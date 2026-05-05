@@ -1,0 +1,17 @@
+=== ANALISIS ESTRUCTURAL DEL GRAFO ===
+
+Numero de nodos: 1088092
+Numero de aristas dirigidas (almacenadas): 3083796
+Numero de aristas no dirigidas: 1541898
+Nodos en la componente conexa principal: 1087562
+Grado promedio: 2.83413
+Nodo de mayor grado: 674502 (grado: 9)
+Numero de componentes conexas: 206
+Diametro estimado (desde nodo de mayor grado): 592
+
+=== COMPARACION CON VALORES SNAP ===
+Nodos totales - SNAP: 1088092, Obtenido: 1088092
+Aristas no dirigidas - SNAP: 1541898, Obtenido: 1541898
+Nodos WCC principal - SNAP: 1087562, Obtenido: 1087562
+Grado promedio - SNAP: 2.83, Obtenido: 2.83413
+Diametro - SNAP: 782, Estimado: 592
