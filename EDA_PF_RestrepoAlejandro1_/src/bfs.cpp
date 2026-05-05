@@ -20,6 +20,8 @@ struct BFSResult {
  * @param g Grafo a explorar
  * @param start_node Nodo inicial
  * @return Resultado del BFS
+ * 
+ * TODO COMMIT 2: Implementar búsqueda en amplitud
  */
 BFSResult bfs(const Graph& g, int start_node) {
     BFSResult result;

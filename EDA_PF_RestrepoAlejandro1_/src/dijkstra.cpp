@@ -20,6 +20,8 @@ struct DijkstraResult {
  * @param g Grafo ponderado
  * @param start_node Nodo inicial
  * @return Resultado del algoritmo Dijkstra
+ * 
+ * 
  */
 DijkstraResult dijkstra(const Graph& g, int start_node) {
     DijkstraResult result;

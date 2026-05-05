@@ -11,6 +11,8 @@
  * 
  * @param filename Ruta del archivo
  * @return Grafo cargado
+ * 
+ * TODO COMMIT 2: Implementar carga completa del grafo
  */
 Graph load_graph(const std::string& filename) {
     Graph g;

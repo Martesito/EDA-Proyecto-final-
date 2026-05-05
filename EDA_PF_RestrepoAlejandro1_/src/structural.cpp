@@ -29,6 +29,8 @@ struct SubgraphStats {
  * 
  * @param g Grafo a analizar
  * @return Estadísticas del grafo
+ * 
+ * TODO COMMIT 2: Implementar análisis estructural completo
  */
 GraphStats analyze_graph(const Graph& g) {
     GraphStats stats;

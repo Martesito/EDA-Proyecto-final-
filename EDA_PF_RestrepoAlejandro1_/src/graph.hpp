@@ -33,7 +33,6 @@ public:
     // Constructor
     Graph();
 
-  
     void add_edge(int u, int v, int weight);
 
    
@@ -51,3 +50,4 @@ public:
 };
 
 #endif // GRAPH_HPP
+

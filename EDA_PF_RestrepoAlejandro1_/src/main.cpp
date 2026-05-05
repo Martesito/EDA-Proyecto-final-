@@ -65,6 +65,12 @@ int main() {
         print_graph_info(g);
         cout << endl;
 
+        // TODO COMMIT 2: Integrar todos los algoritmos
+        // - Ejecutar BFS desde nodos seleccionados
+        // - Ejecutar Dijkstra desde nodos seleccionados
+        // - Realizar análisis estructural
+        // - Extraer y analizar subgrafos
+
     } catch (const exception& e) {
         cerr << "Error: " << e.what() << endl;
         return 1;
@@ -72,4 +78,7 @@ int main() {
 
     return 0;
 }
+
+
+
 

@@ -28,6 +28,8 @@ struct MSTResult {
  * @param g Grafo original
  * @param nodes Conjunto de nodos
  * @return Subgrafo inducido
+ * 
+ * TODO COMMIT 2: Implementar extracción de subgrafos
  */
 Subgraph extract_subgraph(const Graph& g, const std::vector<int>& nodes) {
     Subgraph subgraph;
