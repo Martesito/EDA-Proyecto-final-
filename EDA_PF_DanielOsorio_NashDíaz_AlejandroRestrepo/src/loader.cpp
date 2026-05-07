@@ -27,17 +27,4 @@ Graph load_graph(const std::string& filename) {
         if (!(iss >> u_orig >> v_orig)) continue;
         if (u_orig == v_orig) continue;
 
-        int a = std::min(u_orig, v_orig);
-        int b = std::max(u_orig, v_orig);
-        if (seen_edges.count({a, b})) continue;
-        seen_edges.insert({a, b});
-
-        int u = g.get_or_create(u_orig);
-        int v = g.get_or_create(v_orig);
-
-        int weight = (std::rand() % 10) + 1;
-        g.add_undirected_edge(u, v, weight);
-    }
-
-    return g;
-}
+      
