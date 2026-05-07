@@ -37,4 +37,8 @@ const std::vector<Edge>& Graph::neighbors(int u_internal) const {
 int Graph::num_nodes() const { return n_nodes; }
 long long Graph::num_edges() const { return n_edges; }
 
-
+void Graph::reserve_nodes(int n) {
+    adj.reserve(n);
+    internal_to_orig.reserve(n);
+    orig_to_internal.reserve(n);
+}
